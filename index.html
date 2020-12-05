@@ -1,371 +1,384 @@
-<!DOCTYPE html>
-<html>
-
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>
-        yumn.org
-    </title>
-    <link rel = "icon" href =  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <title>yumn.org</title>
+  <!-- Boorstrap CDN Link Start from Here -->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<!-- Boorstrap CDN Link Start from Here -->
+  <link rel = "icon" href =  
   "images/lgo hamza 4.png" 
           type = "image/x-icon"> 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-<style>
-    /* Make the image fully responsive */
-    .carousel-inner img {
-        
-      width: 100%;
-      height: 100%;
+  <style>
+    #news-bar{
+      background-color: orange;
+      height: 30px;
     }
-    .carousel-inner{
-        height: 23rem;
-    }
-    #text {
+    .h-auto {
+    height: 450px;
+}
+.ribbon {
+   position: relative;
+   top: 50px;
+   right: -1250px;
+}
+.container {
+   position: relative;
+   top: -8px;
+}
+.logo{
+  position: relative;
+  left: 63px;
+}
+ .hero-image {
+    height: 100%;
+background-color:#111827;
+}
+
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  bottom: -430px;
+  left: 880px;
+  transform: translate(-50%, -50%);
+}
+#heading{
+    color: white;
+  font-size: 20px;
+}
+#para{
+    color: gray;
+    padding-left: 15px;
+}
+ #button{
+     color: white;
+ }
+ #text {
 font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
-margin-bottom: -3rem;
 }
-
-
-
-body {
-    background: #eee
-}
-
-.news {
-    width: 160px;
-}
-
-.news-scroll a {
-    text-decoration: none
-}
-
-.dot {
-    height: 6px;
-    width: 6px;
-    margin-left: 3px;
-    margin-right: 3px;
-    margin-top: 2px !important;
-    background-color: rgb(207, 23, 23);
-    border-radius: 50%;
-    display: inline-block
-}
-#news{
-  color: white;
-  height: 35px;
-} 
-body{
-  background-color: rgb(31, 26, 70);
-}
-#cnn{
-bottom: 20px ;
-}
-#foot{
-  color: white;
-}
-*{
- font-family: 'Merriweather', serif;
-}
-    </style>
+  </style>
+  
 </head>
-
 <body>
-<header>
-  <!-- nav bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark" id="nav">
-        <a class="navbar-brand" href="#"><img src="images/lgo hamza 4.png" alt="logo" height="90" width="60"></a><span id="text" style="color:white;font-weight: bolder;font-size: x-large;">Yumn Consultancy Services</span>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse ml-5" style="padding-top: 3rem; padding-left: 10rem;" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item active">
-              <a class="nav-link bg-warning text-dark rounded float" href="#">Home <span class="sr-only">(current)</span></a>
-             
-
-            </li>
-            
-            <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Help?</a>
-            </li>
-          </div>
-        <div class=" ml-5 pl-5">
-          <img src="https://acegif.com/wp-content/uploads/pakistan-flag.gif" style="margin-left: 20rem; padding-right: -15rem;" height="60px" width="80px" class=".animation rounded float-right">
-        </div>
+  <header class="text-gray-500 bg-gray-900 body-font h-400px">
+    
+    
+      <div id="content">
+        <img src="https://acegif.com/wp-content/uploads/pakistan-flag.gif" height="80px" width="80px" class="ribbon"/>
+     </div>
+     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="logo"><a href="#"><img src="images/lgo hamza 4.png"  height="85px" width="85px" alt="logo"></a>
+<span class="ml-3 text-xl" style="color:white;font-weight: bolder;font-size: x-large;" id="text">Yumn consultancy services</span>
+  
+      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 text-yellow-500" style="text-decoration: underline;">HOME</a>
+        <a class="mr-5 hover:text-yellow-500" >ABOUT US</a>
+        <a class="mr-5 hover:text-yellow-500">CONTACT US</a>
+        <a class="mr-5 hover:text-yellow-500">HELP?</a>
       </nav>
-      <!-- nav bar end -->
-      <!-- news bar -->
-      <div class="container-fluid " id="news">
-        <div class="row ">
-            <div class="col-md-12 ">
-                <div class="d-flex justify-content-between align-items-center breaking-news bg-warning rounded float" id="cnn">
-                    <div class="d-flex flex-row flex-grow-1 flex-fill justify-content-center bg-danger py-2 text-white px-1 news rounded float " ><span class="d-flex align-items-center">&nbsp;Latest News:</span></div>
-                    <marquee class="news-scroll" behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();"> <a href="#" style="color: black;">Yumn Consultancy Services is an international consulting firm, specializing in advisory and many other services to public and private sector clients in emerging markets around the globe.</a> </marquee>
-                </div>
-            </div>
-        </div>
     </div>
-    <!-- news bar end -->
-         <!-- carousel start -->
-      <div id="demo" class="carousel slide" data-ride="carousel">
-        <ul class="carousel-indicators">
-          <li data-target="#demo" data-slide-to="0" class="active"></li>
-          <li data-target="#demo" data-slide-to="1"></li>
-          <li data-target="#demo" data-slide-to="2"></li>
-        </ul>
-        
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://lh3.googleusercontent.com/proxy/iNFSdGrfqjBilL8GqdGpKw26tJhd8JTiFcZ1zPt3G1quVseKGd60Oil7XF1DRXUsK01y5DXWlIrtwJbrreWa8xjCfAVG9w" alt="Los Angeles" width="1100" height="500">
-            <div class="carousel-caption">
-              <h3>Los Angeles</h3>
-              <p>We had such a great time in LA!</p>
-            </div>   
-          </div>
-          <div class="carousel-item">
-            <img src="https://www.telegraph.co.uk/content/dam/business/spark/sme-home/hp/business-consultan_3405604b.jpg?imwidth=450" alt="Chicago" width="1100" height="500">
-            <div class="carousel-caption">
-              <h3>Chicago</h3>
-              <p>Thank you, Chicago!</p>
-            </div>   
-          </div>
-          <div class="carousel-item">
-            <img src="https://miro.medium.com/max/2400/1*e6OuwDAnvkDUnb_GqWgrKQ.jpeg" alt="New York" width="1100" height="500">
-            <div class="carousel-caption">
-              <h3>New York</h3>
-              <p>We love the Big Apple!</p>
-            </div>   
-          </div>
+  </header>
+    <!-- newsbar -->
+      <div class="slideUp" id="news-bar">
+    <marquee direction="left" scrollamount="6" behavior="scroll" onmouseover="this.stop()" onmouseout="this.start()">
+    <a href="#" class="hvr-pop"> Yumn Consultancy Services is an international consulting firm, specializing in advisory and many other services to public and private sector clients in emerging markets around the globe. </a><a> . </a>
+   
+    </marquee>
         </div>
-        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#demo" data-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </a>
-      </div>
-      <!-- caresoul end -->
-</header>
- <hr>
-    <!-- Grid start -->
-<section>
-    <div class="container-fluid pt-3">
+  
+  <head>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+      <script>
+        var cont=0;
+    function loopSlider(){
+      var xx= setInterval(function(){
+            switch(cont)
+            {
+            case 0:{
+                $("#slider-1").fadeOut(300);
+                $("#slider-2").delay(300).fadeIn(300);
+                $("#sButton1").removeClass("bg-yellow-600");
+                $("#sButton2").addClass("bg-yellow-600");
+            cont=1;
+            
+            break;
+            }
+            case 1:
+            {
+            
+                $("#slider-2").fadeOut(300);
+                $("#slider-1").delay(300).fadeIn(300);
+                $("#sButton2").removeClass("bg-yellow-600");
+                $("#sButton1").addClass("bg-yellow-600");
+               
+            cont=0;
+            
+            break;
+            }
+            
+            
+            }},8000);
+    
+    }
+    
+    function reinitLoop(time){
+    clearInterval(xx);
+    setTimeout(loopSlider(),time);
+    }
+    
+    
+    
+    function sliderButton1(){
+    
+        $("#slider-2").fadeOut(300);
+        $("#slider-1").delay(300).fadeIn(300);
+        $("#sButton2").removeClass("bg-yellow-600");
+        $("#sButton1").addClass("bg-yellow-600");
+        reinitLoop(4000);
+        cont=0
+        
+        }
+        
+        function sliderButton2(){
+        $("#slider-1").fadeOut(300);
+        $("#slider-2").delay(300).fadeIn(300);
+        $("#sButton1").removeClass("bg-yellow-600");
+        $("#sButton2").addClass("bg-yellow-600");
+        reinitLoop(4000);
+        cont=1
+        
+        }
+    
+        $(window).ready(function(){
+            $("#slider-2").hide();
+            $("#sButton1").addClass("bg-yellow-600");
+            
+    
+            loopSlider();
+         
+            
         
         
-        <div class="row">
-         <div class="col-lg-6 col-md-6 col-12" style="padding-left: 5rem; top: 1rem;" >
-<img src="images/grid1.jpg" height="380rem" width="380rem" alt="photo" class="img-fluid"> 
-         </div>
-    <div class="col-lg-6 col-md-6 col-12"  >
-        <h1 class="text-light pt-3">Let Your Clients Know <br>your worth</h1>
-        <hr>
-        <p class="text-light">
-            Yumn Services is the leading, globally operating technology management consulting company with headquarters in Lahore, which has been combining classic management consulting with high technological competence for over many years.</p>
-        </p>
-        <button class="btn bg-warning">Check All Services</button>
-    </div>
+        
+        
+        });
+    
+      
+      </script>
+    </head>
+    
+    <body>
+      <div class="sliderAx h-auto w-full">
+          <div id="slider-1" class="container mx-auto">
+            <div class="bg-cover bg-center  h-auto text-white py-24 px-10 object-fill" style="background-image: url(https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80)">
+           <div class="md:w-1/2">
+        
+            
+            </div>  
+        </div> <!-- container -->
+          <br>
+          </div>
+    
+          <div id="slider-2" class="container mx-auto">
+            <div class="bg-cover bg-top  h-auto text-white py-24 px-10 object-fill" style="background-image: url(https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80)">
+           
 
+    
+             
+        </div> <!-- container -->
+          <br>
+          </div>
         </div>
-    </div>
-</section>
- <!-- Grid end -->
- <!-- card start -->
- <hr>
- <section>
-   <div class="container">
-    <h1 class="text-center pt-5 text-light">Our Best Services</h1>
-  <div class="row text-center pt-4" id="card">
-    <div class="col-lg-4 col-md-4 col-12">
-      <div class="card"> 
-        <img class="card-img-top" src="images/estate1.jpg" alt="Card image">
-        <div class="card-body">
-          <h4 class="card-title" >Caretaker of your valuable properties</h4>
-          <p class="card-text">1. Rent collection. <br> 2. Contract Drafting & Consultancy.</p>
-          <a href="#" class="btn btn-warning">Click Me</a>
+     <div  class="flex justify-between w-12 mx-auto pb-2">
+            <button id="sButton1" onclick="sliderButton1()" class="bg-yellow-600 rounded-full w-4 pb-2 " ></button>
+        <button id="sButton2" onclick="sliderButton2() " class="bg-yellow-600 rounded-full w-4 p-2"></button>
+      </div>
+      <div class="hero-image">
+        <img class="object-cover object-center rounded" alt="hero" src="https://images.pexels.com/photos/4101143/pexels-photo-4101143.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+        <div class="hero-text">
+          <h1 id="heading"><b> Let Your Clients Know
+              <br> your worth </b>
+          </h1>
+          <p id="para">Yumn Services is the leading, globally operating technology management consulting company with headquarters in Lahore, which has been combining classic management consulting with high technological competence for over many years. The focus of its activities is on digital transformation: Yumn Services supports companies from all areas of business to adapt their business models and operational processes to the competitive conditions and customer requirements of the digitalized, globalized economy with state-of-the-art communication and information technology. Yumn expertise bundles the knowledge from the successful conclusion of management and ICT consulting projects in all over country.</p>
+          <button class="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-500 hover:text-white rounded text-sl" id="button">Check All Services</button>
+        </div>
+      </div>
+  <hr>
+  <section class="text-gray-500 body-font bg-gray-900">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap w-full mb-20">
+        <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">Our Best Services</h1>
+          <div class="h-1 w-20 bg-orange-500 rounded"></div>
+        </div>
+        <p class="lg:w-1/2 w-full leading-relaxed text-base">Yumn Services is driving forward its consulting approach Beyond Consulting, a significant evolutionary step forward in traditional consulting methods adapted to meet the demands of digitalization today and in the future.</p>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-800 p-6 rounded-lg transition duration-500 ease-in-out hover:bg-yellow-500 transform hover:-translate-y-1 hover:scale-110">
+            <a href="/"> <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.pakpeek.com/wp-content/uploads/2018/09/Real-Estate-Property-Business-in-Baluchistan.jpg" alt="content">
+            <h3 class="tracking-widest text-orange-500 text-xs font-medium title-font">Real Estate</h3>
+            <h2 class="text-lg text-white font-medium title-font mb-4">Caretaker of your valuable properties</h2>
+            <p class="leading-relaxed text-base">Yumn take care of your apartment houses, hotels, offices, Land and other buildings and maintain them and associated grounds in a clean and organized condition. </p></a>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-800 p-6 rounded-lg bg-gray-800 p-6 rounded-lg transition duration-500 ease-in-out hover:bg-yellow-500 transform hover:-translate-y-1 hover:scale-110">
+           <a href="/"> <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://etimg.etb2bimg.com/photo/74873427.cms" alt="content">
+            <h3 class="tracking-widest text-orange-500 text-xs font-medium title-font">Tenants</h3>
+            <h2 class="text-lg text-white font-medium title-font mb-4">Rent Collection</h2>
+            <p class="leading-relaxed text-base">Why you should outsource your rent collection to us?Not Headache for Rent Collection *Sit home get money</p></a>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-800 p-6 rounded-lg bg-gray-800 p-6 rounded-lg transition duration-500 ease-in-out hover:bg-yellow-500 transform hover:-translate-y-1 hover:scale-110">
+            <a href="/">  <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://corporatelawconsultantsinlahore.yolasite.com/resources/Corporate%20Law%20Consultants%20in%20Lahore%2010.jpg?timestamp=1362394267422" alt="content">
+            <h3 class="tracking-widest text-orange-500 text-xs font-medium title-font">Legal</h3>
+            <h2 class="text-lg text-white font-medium title-font mb-4">Contract Drafting & Consultancy</h2>
+            <p class="leading-relaxed text-base">When a legal contract is drafted by professionals, it helps both the parties involved in understanding the terms of the agreement and fulfill their duties in compliance with the contract. </p></a>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-800 p-6 rounded-lg bg-gray-800 p-6 rounded-lg transition duration-500 ease-in-out hover:bg-yellow-500 transform hover:-translate-y-1 hover:scalyellow-500">
+            <a href="/">   <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.communityrights.org/wp-content/uploads/2018/10/Law-Consultant-Expert.jpg" alt="content">
+            <h3 class="tracking-widest text-orange-500 text-xs font-medium title-font">Health</h3>
+            <h2 class="text-lg text-white font-medium title-font mb-4">Medical Tools & Equipment's</h2>
+            <p class="leading-relaxed text-base">Yout Health is our first priority.</p></a>
+          </div>
+        </div>
+	<div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-800 p-6 rounded-lg bg-gray-800 p-6 rounded-lg transition duration-500 ease-in-out hover:bg-yellow-500 transform hover:-translate-y-1 hover:scale-110">
+            <a href="/">  <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://corporatelawconsultantsinlahore.yolasite.com/resources/Corporate%20Law%20Consultants%20in%20Lahore%2010.jpg?timestamp=1362394267422" alt="content">
+            <h3 class="tracking-widest text-orange-500 text-xs font-medium title-font">Software's</h3>
+            <h2 class="text-lg text-white font-medium title-font mb-4">Digitalize Your Business</h2>
+            <p class="leading-relaxed text-base">Its time to upgarde your business to the next level. </p></a>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col-lg-4 col-md-4 col-12">
-      <div class="card">
-        <img class="card-img-top" src="https://www.communityrights.org/wp-content/uploads/2018/10/Law-Consultant-Expert.jpg">
-        <div class="card-body">
-          <h4 class="card-title">Medical Tools & Equipment's</h4>
-          <p class="card-text"> Yout Health is our first priority. </p>
-          <a href="#" class="btn btn-warning">Click Me</a>
-        </div>
-      </div>
+    
+  </section>
+<hr>
+<footer class="text-gray-500 bg-gray-900 body-font">
+  <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-no-wrap flex-wrap flex-col">
+    <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+        <a class="logo pl-30"><a href="#"><img src="images/lgo hamza 4.png" height="50px" width="50px" alt="logo" class="logo"></a>
+           <span style="color: white;font-weight: bolder;">Yumn consultancy services</span>
+      </a>
+      <p class="mt-2 text-sm text-gray-700">Air plant banjo lyft occupy retro adaptogen indego</p>
     </div>
-    <div class="col-lg-4 col-md-4 col-12">
-      <div class="card">
-        <img class="card-img-top" src="images/software.png" alt="Card image">
-        <div class="card-body">
-          <h4 class="card-title">Advance Your Business</h4>
-          <p class="card-text">Its time to upgarde your business to the next level.</p>
-          <a href="#" class="btn btn-warning">Click Me</a>
-        </div>
+    <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-600 hover:text-yellow-500">First Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-yellow-500">Second Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-yellow-500">Third Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-yellow-500">Fourth Link</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-600 hover:text-yellow-500">First Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-yellow-500">Second Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-yellow-500">Third Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-yellow-500">Fourth Link</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-600 hover:text-yellow-500">First Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-yellow-500">Second Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-yellow-500">Third Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-yellow-500">Fourth Link</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-600 hover:text-yellow-500">First Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-yellow-500">Second Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-yellow-500">Third Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-yellow-500">Fourth Link</a>
+          </li>
+        </nav>
       </div>
     </div>
   </div>
-      </section>
-      <hr>
-      <footer>
-        <!-- Footer -->
-<footer class="page-footer font-small mdb-color pt-4" id="foot">
-
-  <!-- Footer Links -->
-  <div class="container-fluid text-center text-md-left">
-
-    <!-- Footer links -->
-    <div class="row text-center text-md-left mt-3 pb-3">
-
-      <!-- Grid column -->
-      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-        <h6 class="text-uppercase mb-4 font-weight-bold">Yumn Consultancy Services</h6>
-        <p>Here you can find consultant and alot of services <br>
-          Don't worry move forward.
-        </p>
-      </div>
-      <!-- Grid column -->
-
-      <hr class="w-100 clearfix d-md-none">
-
-      <!-- Grid column -->
-      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-        <h6 class="text-uppercase mb-4 font-weight-bold">Services</h6>
-        <p>
-          <a href="#!">Rent collection</a>
-        </p>
-        <p>
-          <a href="#!">Caretaker of properties</a>
-        </p>
-        <p>
-          <a href="#!">Medical Equipment</a>
-        </p>
-        <p>
-          <a href="#!">Softwares</a>
-        </p>
-      </div>
-      <!-- Grid column -->
-
-      <hr class="w-100 clearfix d-md-none">
-
-      <!-- Grid column -->
-      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-        <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
-        <p>
-          <a href="#!">Your Account</a>
-        </p>
-        <p>
-          <a href="#!">Become an Affiliate</a>
-        </p>
-        <p>
-          <a href="#!">Shipping Rates</a>
-        </p>
-        <p>
-          <a href="#!">Help</a>
-        </p>
-      </div>
-
-      <!-- Grid column -->
-      <hr class="w-100 clearfix d-md-none">
-
-      <!-- Grid column -->
-      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-        <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-        <p>
-          <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-        <p>
-          <i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
-        <p>
-          <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-        <p>
-          <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
-      </div>
-      <!-- Grid column -->
-
+  <div class="bg-gray-800">
+    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+      <p class="text-gray-600 text-sm text-center sm:text-left">© 2020 Yumn Consultancy Services —
+        <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-500 ml-1" target="_blank">@All rights reserved</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+        <a class="text-gray-600">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-600">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-600">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-600">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
     </div>
-    <!-- Footer links -->
-
-    <hr>
-
-    <!-- Grid row -->
-    <div class="row d-flex align-items-center">
-
-      <!-- Grid column -->
-      <div class="col-md-7 col-lg-8">
-
-        <!--Copyright-->
-        <p class="text-center text-md-left">© 2020 Copyright:
-          <a href="https://mdbootstrap.com/">
-            <strong> Yumn.org</strong>
-          </a>
-        </p>
-
-      </div>
-      <!-- Grid column -->
-
-      <!-- Grid column -->
-      <div class="col-md-5 col-lg-4 ml-lg-0">
-
-        <!-- Social buttons -->
-        <div class="text-center text-md-right">
-          <ul class="list-unstyled list-inline">
-            <li class="list-inline-item">
-              <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                <i class="fab fa-google-plus-g"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-      <!-- Grid column -->
-
-    </div>
-    <!-- Grid row -->
-
   </div>
-  <!-- Footer Links -->
-
 </footer>
-<!-- Footer -->
-      </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>
